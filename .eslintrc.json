@@ -1,0 +1,118 @@
+{
+  "extends": [
+    "alloy", 
+    "alloy/react", 
+    "alloy/typescript",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "@typescript-eslint"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "no-var": "error",
+
+  // Temporarily cancel verification
+    "no-return-assign": "off",
+    "max-params": "off",
+    "complexity": "off",
+    "no-promise-executor-return": "off",
+    "max-depth": "off",
+    "@typescript-eslint/prefer-for-of": "off",
+    "no-param-reassign": "off", 
+    "no-new-func": "off",
+    "eqeqeq": "off", 
+    "no-fallthrough": "off",
+    "max-nested-callbacks": "off",
+    "no-extra-semi": "error",
+    "semi": "error",
+    "semi-spacing": "error",
+    "no-implicit-coercion": "off",
+    "no-multiple-empty-lines": "error",
+    "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
+
+    "max-statements-per-line": ["error", { "max": 1 }],
+    
+    // "no-unused-vars": "error",
+    // "no-console": "error",
+    // "indent": "warn", 
+
+    "quotes": "off",
+    "@typescript-eslint/quotes": ["error", "single"],
+
+    "comma-dangle": "off" , 
+    // "@typescript-eslint/comma-dangle": ["error"],
+
+    "@typescript-eslint/member-delimiter-style": ["error", {
+      "multiline": {
+        "delimiter": "semi",
+        "requireLast": true
+      },
+      "singleline": {
+        "delimiter": "semi",
+        "requireLast": false
+      },
+      "multilineDetection": "brackets"
+    }],
+    "import/prefer-default-export": "off",
+    "arrow-body-style": "error",
+    "prefer-arrow-callback": "error",
+    "spaced-comment": "error",
+    "class-methods-use-this": "off",
+    "no-underscore-dangle": "off",
+    "react/prop-types": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-max-props-per-line": "off",
+    "react/no-did-mount-set-state": "off",
+    "react/sort-comp": "off",
+    "jsx-a11y/alt-text": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/mouse-events-have-key-events": "off",
+    "import/first": "off",
+    "jsx-a11y/media-has-caption": "off",
+    "react/no-array-index-key": "off",
+    "react/no-multi-comp": ["error", { "ignoreStateless": true }],
+    "react/jsx-props-no-spreading": "off",
+    "react/destructuring-assignment": "off",
+    "react/button-has-type": "off",
+    "object-curly-newline": "off",
+    "react/jsx-curly-brace-presence": "off",
+    "operator-linebreak": [
+      "error",
+      "before",
+      {
+        "overrides": {
+          "?": "ignore",
+          ":": "ignore",
+          "||": "ignore",
+          "&&": "ignore",
+          "=": "ignore",
+          "+": "ignore",
+          "!==": "ignore"
+        }
+      }
+    ],
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+    "@typescript-eslint/explicit-member-accessibility": "off",
+    "@typescript-eslint/no-require-imports": "off",
+    "@typescript-eslint/no-parameter-properties": "off",
+    "@typescript-eslint/member-ordering": "off",
+    "no-undef": "off",
+    "react/no-did-update-set-state": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "@typescript-eslint/consistent-type-assertions": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
