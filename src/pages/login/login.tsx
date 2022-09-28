@@ -27,7 +27,7 @@ const Login = () => {
   }, []);
 
   const loginF = () => {
-    login('57blocks', '5a9ypkMcfMjQ2YT')
+    login('username', 'pwd')
       .then((res: any) => {
         // console.log(2222, res);
         // localStorage.setItem();
