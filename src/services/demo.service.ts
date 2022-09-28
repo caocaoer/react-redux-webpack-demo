@@ -2,7 +2,7 @@ import Request from './base.service';
 import { Base64 } from 'js-base64';
 
 // export function getInfo() {
-//   const patient = 'https://covid19-test.oth.io/clinician/api/patients/94';
+//   const patient = 'https://www.demo.io/api/user/1';
 //   return Request.get(
 //     '/results/results',
 //     {
@@ -18,5 +18,5 @@ export function login(username: string, password: string) {
     'Content-Type': 'application/json',
     Authorization: 'Basic ' + Base64.encode(`${username}:${password}`),
   };
-  return Request.get('/idp2/users/auth', {}, headers);
+  return Request.get('/api/users/auth', {}, headers);
 }
