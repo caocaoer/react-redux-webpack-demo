@@ -1,0 +1,14 @@
+.layout {
+  color: red;
+  height: 100vh;
+  .left {
+    border: 1px solid blue;
+    width: 24vh;
+    min-width: 24vh;
+    background: #fff;
+  }
+  .right {
+    border: 1px solid;
+    flex-grow: 1;
+  }
+}

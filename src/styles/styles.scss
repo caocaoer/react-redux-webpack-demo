@@ -1,0 +1,30 @@
+:global {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  *,
+  :after,
+  :before {
+    box-sizing: border-box;
+  }
+
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font: 14px Roboto, 'Helvetica Neue', sans-serif;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  img {
+    border-style: none;
+    box-sizing: border-box;
+    vertical-align: middle;
+  }
+}

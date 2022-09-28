@@ -1,0 +1,15 @@
+# EXAMPLE USAGE:
+#
+#   Refer for explanation to following link:
+#   https://github.com/evilmartians/lefthook/blob/master/docs/full_guide.md
+#
+pre-push:
+  commands:
+    eslint:
+      glob: '*.{js,ts,tsx}'
+      run: npm run eslint:fix
+pre-commit:
+  parallel: true
+  commands:
+    pretty:
+      run: npx pretty-quick --staged
