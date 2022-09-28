@@ -16,8 +16,8 @@ export default merge(baseConfig, {
     // Game builder projects cannot use the output locally if the HMR is enabled.
     hot: false,
     proxy: {
-      '/idp2': {
-        target: 'https://covid19-test.oth.io',
+      '/api': {
+        target: 'https://www.demo.io',
         changeOrigin: true,
         secure: false,
       },
